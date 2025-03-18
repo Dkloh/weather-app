@@ -1,38 +1,99 @@
+/* App.css */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  transition: background 0.5s ease; /* Smooth transition for background changes */
 }
 
-.App-link {
-  color: #61dafb;
+/* Dynamic Backgrounds */
+.App.clear {
+  background: linear-gradient(135deg, #87CEEB, #00BFFF); /* Sunny */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App.rain {
+  background: linear-gradient(135deg, #6A5ACD, #4682B4); /* Rainy */
+}
+
+.App.clouds {
+  background: linear-gradient(135deg, #B0C4DE, #778899); /* Cloudy */
+}
+
+.App.default {
+  background: linear-gradient(135deg, #F5F5F5, #D3D3D3); /* Default */
+}
+
+/* Header Styles */
+.App-header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Weather Icon Styles */
+.weather-icon {
+  font-size: 64px;
+  margin: 20px 0;
+  color: #FFD700; /* Gold color for sun */
+}
+
+.weather-icon.rain {
+  color: #1E90FF; /* Blue color for rain */
+}
+
+.weather-icon.clouds {
+  color: #A9A9A9; /* Gray color for clouds */
+}
+
+/* Temperature Styles */
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Location Styles */
+.location {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #21a1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .location {
+    font-size: 20px;
   }
 }
