@@ -21,7 +21,7 @@ A modern weather app built with React, Tailwind CSS, and the OpenWeatherMap API.
 
 You can add this weather app to your home screen on iOS for quick access:
 
-1. Open the app in **Safari**.
+1. Open the app in **any browser on your phone**.
 2. Tap the **Share** button (the square with an arrow pointing up).
 3. Select **Add to Home Screen**.
 4. Customize the name (optional) and tap **Add**.
